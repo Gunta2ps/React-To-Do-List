@@ -32,11 +32,11 @@ function ToDoList() {
         <div className='bg-blue-400 h-[95vh]'>
             <h1 className='text-4xl font-bold text-center'>To-Do List</h1>
             <div className='flex justify-center'>
-                <input className='input input-bordered w-full max-w-xs' 
+                <input className='input input-bordered w-full max-w-xs mt-10' 
                 type="text" onChange={changeText} />
-                <button className='btn btn-neutral' onClick={click}>Add</button>
+                <button className='btn btn-neutral mt-10 ml-10' onClick={click}>Add</button>
             </div>
-            <div className=' w-3/4  flex flex-col mt-4 rounded-xl mx-auto'>
+            <div className='bg-white mx-auto w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl mt-10'>
                 {
                     arrObj.map((el,index) => (
                         <List key = {index} el = {el} index = {index} deleteObj = {deleteObj} updateObj = {updateObj}/>
